@@ -159,7 +159,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				353E315BE0CDDA4F972230B1 /* [CP] Embed Pods Frameworks */,
 				8260E879B5A6374AF2F4873A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -182,7 +181,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5C98C94D67A0940143E5F8A3 /* [CP] Embed Pods Frameworks */,
 				840C165EF0D137C09F125B39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -264,23 +262,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		353E315BE0CDDA4F972230B1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-theF4-theF4Tests/Pods-theF4-theF4Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-theF4-theF4Tests/Pods-theF4-theF4Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-theF4-theF4Tests/Pods-theF4-theF4Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4906463896BB57D4E254B03B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,23 +282,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C98C94D67A0940143E5F8A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-theF4/Pods-theF4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-theF4/Pods-theF4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-theF4/Pods-theF4-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8260E879B5A6374AF2F4873A /* [CP] Copy Pods Resources */ = {
@@ -483,8 +447,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6H8ZY6JT82;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = ZHRRY4RFMJ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = theF4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,8 +474,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6H8ZY6JT82;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = ZHRRY4RFMJ;
 				INFOPLIST_FILE = theF4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

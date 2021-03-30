@@ -2,8 +2,12 @@ import 'react-native-gesture-handler'
 import React, { useState, useEffect, useRef } from 'react'
 import { View, Text, StyleSheet, ImageBackground, TouchableOpacity, SafeAreaView, Dimensions, TextInput, ScrollView, RefreshControl } from 'react-native'
 import AnimateNumber from 'react-native-animate-number'
+import SplashScreen from 'react-native-splash-screen'
 
 const Counter = () => {
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
   const [p1S, setP1S] = useState(8000)
   const [p2S, setP2S] = useState(8000)
   const myRef = useRef(null)
@@ -37,10 +41,15 @@ const Counter = () => {
   }
 
   return (
-    <ImageBackground 
-    source={require('./bg.png')}
-    resizeMode={'cover'}
-
+    <ImageBackground
+      source={require('./bg.png')}
+      style={
+        {
+          flex: 1,
+          resizeMode: "cover",
+          justifyContent: "center"
+        }
+      }
     >
       <SafeAreaView style={{
         flex: 1
@@ -68,7 +77,9 @@ const Counter = () => {
               setCmd('dec')
             }}>
               <Text style={{
-                fontSize: 80
+                fontSize: 80,
+                color: 'white',
+                fontWeight: 'bold'
               }}>
                 -
                     </Text>
@@ -80,7 +91,9 @@ const Counter = () => {
                 return parseInt(val)
               }}
               style={{
-                fontSize: 30
+                fontSize: 30,
+                color: 'white',
+                fontWeight: 'bold'
               }}
             />
             <TouchableOpacity onPress={() => {
@@ -88,7 +101,9 @@ const Counter = () => {
               setCmd('inc')
             }}>
               <Text style={{
-                fontSize: 80
+                fontSize: 80,
+                color: 'white',
+                fontWeight: 'bold'
               }}>+</Text>
             </TouchableOpacity>
           </View>
@@ -110,7 +125,9 @@ const Counter = () => {
               setCmd('dec')
             }}>
               <Text style={{
-                fontSize: 80
+                fontSize: 80,
+                color: 'white',
+                fontWeight: 'bold'
               }}>
                 -
                 </Text>
@@ -122,14 +139,18 @@ const Counter = () => {
                 return parseInt(val)
               }}
               style={{
-                fontSize: 30
+                fontSize: 30,
+                color: 'white',
+                fontWeight: 'bold'
               }} />
             <TouchableOpacity onPress={() => {
               myRef2.current.focus()
               setCmd('inc')
             }}>
               <Text style={{
-                fontSize: 80
+                fontSize: 80,
+                color: 'white',
+                fontWeight: 'bold'
               }}>
                 +
                     </Text>
